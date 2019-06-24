@@ -10,12 +10,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Date;
 
-/**
- * Film api
- * <p/>
- * <p/>
- *
- */
 @RestController
 public class FilmApi {
 
