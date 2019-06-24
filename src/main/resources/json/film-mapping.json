@@ -1,0 +1,48 @@
+{
+  "film": {
+    "properties": {
+      "id": {
+        "type": "integer"
+      },
+      "name": {
+        "type": "text",
+        "store": false,
+        "term_vector": "with_positions_offsets",
+        "analyzer": "ik_pinyin_analyzer",
+        "boost": 10,
+        "fielddata": true,
+        "fields": {
+          "raw": {
+            "type": "keyword"
+          }
+        }
+      },
+      "nameOri": {
+        "type": "text",
+        "store": false,
+        "term_vector": "with_positions_offsets",
+        "analyzer": "ik_pinyin_analyzer",
+        "boost": 10
+      },
+      "publishDate": {
+        "type": "text"
+      },
+      "type": {
+        "type": "text"
+      },
+      "language": {
+        "type": "text"
+      },
+      "fileDuration": {
+        "type": "text"
+      },
+      "director": {
+        "type": "text"
+      },
+      "created": {
+        "type": "date",
+        "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis"
+      }
+    }
+  }
+}
